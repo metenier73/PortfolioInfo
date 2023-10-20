@@ -1,0 +1,16 @@
+{
+  "name": "PortfolioInfo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^4.6.1",
+    "node-sass": "^7.0.1"
+  },
+  "scripts": {
+    "compile": "node-sass scss/style.scss css/style.css",
+    "watch": "node-sass scss/style.scss css/style.css -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "Portfolio Informatique"
+}
