@@ -205,7 +205,7 @@
                 <li>Bash <meter max="100" low="25" high="75" optimum="65" value="55"></meter></li>
               </ul>
               <ul><u>Reseaux :</u>
-                <li>TCP/IP <meter " max=" 100" low="25" high="75" optimum="95" value="90"></meter></li>
+                <li>TCP/IP <meter " max=" 100" low="25" high="75" optimum="65" value="90"></meter></li>
               </ul>
             </div>
             </p>
