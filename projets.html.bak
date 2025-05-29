@@ -93,7 +93,7 @@
           <img src="images/snapface.png" alt="Projet Angular" class="card-img-top w-25">
           <div class="card-body">
             
-            <p class="card-text">Site dépot image Snapface : Angular
+            <p class="card-text">Site dépot image : Angular
             </p>
 
             <a href="https://metenier73.github.io/snapface/ " class="btn btn-primary stretched-link"
