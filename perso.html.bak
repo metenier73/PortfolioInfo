@@ -144,12 +144,11 @@
 			 </div> 
 		</div>
 		<div class="card mb-4 mb-lg-0 border-light shadow-sm"> 
-			<div class="card-body">
 			 <p class="card-text"> Détection d'Émotions Faciales avec Deep Learning</p>
 										
 			<a href="https://github.com/metenier73/D-tection-d-motions-faciales.git" title="D-tection-d-motions-faciales"
 									onclick="window.open(this.href);return false" class="btn btn-primary stretched-link">App</a>
-			</div>
+		
 		</div>
 		
 	  </div>
