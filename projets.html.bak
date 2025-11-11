@@ -142,15 +142,6 @@
           </div>
         </div>
 		
-		 <div class="card mb-2 mb-lg-0 border-light shadow-sm">
-          <img src="images/Monitrice.png" alt="CMS : soloist" class="card-img-top w-25">
-          <div class="card-body">
-            
-            <p class="card-text">⛷️ Site monitrice de Ski Snowboard : Soloist </p>
-            <a href="https://soloist.ai/monitricedeskisnowboard" class="btn btn-primary stretched-link"
-              onclick="window.open(this.href);return false"> Monitrice</a>
-          </div>
-        </div>
 
       
         <div class="card mb-2 mb-lg-0 border-light shadow-sm">
@@ -217,7 +208,19 @@
               onclick="window.open(this.href);return false"> Monitrice</a>
 				</div>
 			</div>
+			
+			<div class="card mb-2 mb-lg-0 border-light shadow-sm">
+				<img src="images/Monitrice.png" alt="CMS : soloist" class="card-img-top w-25">
+				<div class="card-body">
+            
+					<p class="card-text">⛷️ Site monitrice de Ski Snowboard : Soloist </p>
+					<a href="https://soloist.ai/monitricedeskisnowboard" class="btn btn-primary stretched-link"
+				onclick="window.open(this.href);return false"> Monitrice</a>
+				</div>
+			</div>
+		
 		</div>
+		
 		
 			
 		<div class="col-12 col-lg-3">            
@@ -311,7 +314,7 @@
               </p>
             </li>
             <li class="list-inline-item">&middot;</li>
-            <li class="list-inline-item"><a href="https://www.linkedin.com/in/myriam-metenier-20857a70"
+            <li class="list-inline-item"><a href="https://www.linkedin.com/in/mmetenier"
                 target="_blank">Linkedin</a>
             </li>
             <li class=" list-inline-item">&middot;</li>
