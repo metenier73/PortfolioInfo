@@ -12,7 +12,6 @@
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,0" />
   <title>Portfolio Informatique</title>
 
-  <title>Portfolio Informatique</title>
 </head>
 
 <body>
@@ -21,6 +20,8 @@
       <div class="row">
         <nav class="col navbar navbar-expand-lg navbar-dark">
           <a class="navbar-brand" href="index.html">
+		    <img src="images/Informa-removebg-preview.png" width="50" height="50" alt="Info Logo" />
+
             <!--  <img src="images/logo.png" width="50" height="50" alt="Info Logo" />-->
             <span class="material-symbols-outlined">
               psychology
@@ -314,7 +315,7 @@
               </p>
             </li>
             <li class="list-inline-item">&middot;</li>
-            <li class="list-inline-item"><a href="https://www.linkedin.com/in/mmetenier"
+            <li class="list-inline-item"><a href="https://www.linkedin.com/in/metenier-informatique"
                 target="_blank">Linkedin</a>
             </li>
             <li class=" list-inline-item">&middot;</li>
