@@ -2200,6 +2200,12 @@ input[type="reset"].btn-block,
 input[type="button"].btn-block {
   width: 100%; }
 
+<input class="form-control"
+       id="searchInput"
+       type="text"
+       placeholder="🔎 Rechercher un projet..."
+       aria-label="Rechercher un projet">
+
 .fade {
   transition: opacity 0.15s linear; }
   @media (prefers-reduced-motion: reduce) {
@@ -3062,13 +3068,70 @@ input[type="button"].btn-block {
 .tab-content > .active {
   display: block; }
 
+/* ===== GLOBAL ===== */
+body {
+  background: linear-gradient(to bottom, #f8f9fa, #eef1f5);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* ===== NAVBAR 2026 GLASS EFFECT ===== */
 .navbar {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  background: rgba(0, 0, 0, 0.75) !important;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+/* ===== NAV LINK HOVER EFFECT ===== */
+.navbar .nav-link {
   position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0.5rem 1rem; }
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background: #0d6efd;
+  transition: width 0.3s ease;
+}
+
+.navbar .nav-link:hover::after {
+  width: 100%;
+}
+
+/* ===== CARDS ===== */
+.card {
+  border: none;
+  border-radius: 18px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.card img {
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+}
+
+/* ===== BUTTON MODERN ===== */
+.btn-modern {
+  border-radius: 50px;
+  padding: 8px 22px;
+  transition: all 0.3s ease;
+}
+
+.btn-modern:hover {
+  transform: scale(1.05);
+}
+
   .navbar .container,
   .navbar .container-fluid, .navbar .container-sm, .navbar .container-md, .navbar .container-lg, .navbar .container-xl {
     display: flex;
