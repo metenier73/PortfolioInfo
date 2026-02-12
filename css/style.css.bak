@@ -2200,12 +2200,6 @@ input[type="reset"].btn-block,
 input[type="button"].btn-block {
   width: 100%; }
 
-<input class="form-control"
-       id="searchInput"
-       type="text"
-       placeholder="🔎 Rechercher un projet..."
-       aria-label="Rechercher un projet">
-
 .fade {
   transition: opacity 0.15s linear; }
   @media (prefers-reduced-motion: reduce) {
