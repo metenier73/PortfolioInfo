@@ -15,27 +15,70 @@
   <title>Portfolio Informatique</title>
 
  
+<style>
+
+/* ===== GLOBAL ===== */
+body {
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* ===== NAVBAR 2026 STYLE ===== */
+.navbar {
+  backdrop-filter: blur(auto);
+  background: rgba(0, 0, 0, 0.5) !important;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  
+}
+
+
+
+/* ===== CARDS ===== */
+.card {
+  border: none;
+  border-radius: 16px;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(6px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.card img {
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+/* ===== BUTTON ===== */
+.btn-modern {
+  border-radius: 50px;
+  padding: 8px 20px;
+}
+
+
+</style>
 </head>
 
 <body>
-  <div class="bg-dark">
-    <div class="container">
-      <div class="row">
-        <nav class="col navbar navbar-expand-lg navbar-dark">
-          <a class="navbar-brand" href="index.html">
-		    <img src="images/Informa-removebg-preview.png" width="50" height="50" alt="Info Logo" />
 
-            <!-- <img src="images/logo.png" width="50" height="50" alt="Info Logo" />-->
-            <span class="material-symbols-outlined">
-              psychology
-            </span>
-            Portfolio Informatique
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div id="navbarContent" class="collapse navbar-collapse">
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">🧠 Myriam.dev</a>
+
+    <button class="navbar-toggler" type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+         <div class="collapse navbar-collapse" id="navbarContent">
             <ul class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link" href="index.html">Accueil</a>
@@ -43,18 +86,19 @@
               <li class="nav-item">
                 <a class="nav-link" href="formation.html">Formation</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item active">
                 <a class="nav-link" href="projets.html">Projets</a>
               </li>
-              <li class="nav-item active">
+              <li class="nav-item">
                 <a class="nav-link" href="experience.html">Expèrience Pro</a>
               </li>
             </ul>
           </div>
-        </nav>
+       
       </div>
-    </div>
-  </div>
+  </nav>   
+ 
+ 
   <div class="container">
     <div class="row my-3">
       <div class="col">
@@ -320,26 +364,22 @@
     </div>
   </div>
 
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-    crossorigin="anonymous"></script>
-  <script>
-    $(document).ready(function () {
-      $("#searchInput").on("keyup", function () {
-        var value = $(this).val().toLowerCase();
-        $("#lessonList .col-12").filter(function () {
-          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-        });
-      });
-    });
-  </script>
+ <!-- ===== BOOTSTRAP JS ===== -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- ===== SEARCH JS ===== -->
+<script>
+document.getElementById("searchInput").addEventListener("keyup", function () {
+  let value = this.value.toLowerCase();
+  let cards = document.querySelectorAll("#projectList .col-12");
+
+  cards.forEach(function (card) {
+    card.style.display = card.textContent.toLowerCase().includes(value)
+      ? ""
+      : "none";
+  });
+});
+</script>
 </body>
 
 </html>

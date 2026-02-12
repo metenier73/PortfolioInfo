@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="description" content="Portfolio Informatique de Myriam Metenier - Développement Web, IA, Python, Full Stack.">
+<meta name="author" content="Myriam Metenier">
+
+<title>Portfolio | Myriam Metenier</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+
+/* ===== GLOBAL ===== */
+body {
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* ===== NAVBAR 2026 STYLE ===== */
+.navbar {
+  backdrop-filter: blur(12px);
+  background: rgba(0, 0, 0, 0.85) !important;
+  
+}
+
+.navbar-brand {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* ===== HERO ===== */
+.hero {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-weight: 700;
+}
+
+/* ===== CARDS ===== */
+.card {
+  border: none;
+  border-radius: 16px;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.card img {
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+/* ===== BUTTON ===== */
+.btn-modern {
+  border-radius: 50px;
+  padding: 8px 20px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background: #111;
+  color: white;
+}
+
+footer a {
+  
+  text-decoration: none;
+}
+
+footer a:hover {
+ 
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">🧠 Myriam.dev</a>
+
+    <button class="navbar-toggler" type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="#">Projets</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Formation</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Expérience</a></li>
+        <li class="nav-item">
+          <a class="btn btn-primary btn-modern ms-3" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== HERO SECTION ===== -->
+<section class="hero mt-5 pt-5">
+  <div class="container">
+    <h1>Portfolio Développement & IA</h1>
+    <p class="text-muted">Full-Stack • Python • Intelligence Artificielle • CMS</p>
+  </div>
+</section>
+
+<!-- ===== SEARCH ===== -->
+<section class="container mb-4">
+  <input class="form-control form-control-lg"
+         id="searchInput"
+         type="text"
+         placeholder="🔎 Rechercher un projet...">
+</section>
+
+<!-- ===== PROJECTS GRID ===== -->
+<section class="container mb-5">
+  <div class="row g-4" id="projectList">
+
+    <!-- CARD 1 -->
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="card shadow-sm h-100">
+        <img src="images/IntelligenceArtificielle.png"
+             class="card-img-top img-fluid"
+             loading="lazy"
+             alt="Projet Intelligence Artificielle">
+        <div class="card-body">
+          <h5 class="card-title">Cours IA</h5>
+          <p class="card-text">Site pédagogique complet sur l’Intelligence Artificielle.</p>
+          <a href="#" target="_blank"
+             class="btn btn-primary btn-modern">
+             Voir le projet
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="card shadow-sm h-100">
+        <img src="images/Psychologie.png"
+             class="card-img-top img-fluid"
+             loading="lazy"
+             alt="Projet Psychology">
+        <div class="card-body">
+          <h5 class="card-title">Psychology</h5>
+          <p class="card-text">Découvrez votre esprit – HTML, CSS & JavaScript.</p>
+          <a href="#" target="_blank"
+             class="btn btn-primary btn-modern">
+             Voir le projet
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="py-4 text-center">
+  <div class="container">
+    <p>© 2026 Myriam Metenier • Développeuse Web & IA</p>
+    <a href="mailto:metenier@yahoo.fr">Contact</a> |
+    <a href="#" target="_blank">LinkedIn</a>
+  </div>
+</footer>
+
+<!-- ===== BOOTSTRAP JS ===== -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- ===== SEARCH JS ===== -->
+<script>
+document.getElementById("searchInput").addEventListener("keyup", function () {
+  let value = this.value.toLowerCase();
+  let cards = document.querySelectorAll("#projectList .col-12");
+
+  cards.forEach(function (card) {
+    card.style.display = card.textContent.toLowerCase().includes(value)
+      ? ""
+      : "none";
+  });
+});
+</script>
+
+</body>
+</html>
