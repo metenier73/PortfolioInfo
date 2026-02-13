@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="author" content="Metenier Myriam, Developpement front-end">
+  <link rel="icon" href="images/papillon.ico" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,0" />
+  <title>Portfolio Informatique</title>
+<style>
+
+/* ===== GLOBAL ===== */
+body {
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* ===== NAVBAR 2026 STYLE ===== */
+.navbar {
+  backdrop-filter: blur(auto);
+  background: rgba(0, 0, 0, 0.5) !important;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  
+}
+
+
+
+/* ===== CARDS ===== */
+.card {
+  border: none;
+  border-radius: 16px;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(6px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.card img {
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+/* ===== BUTTON ===== */
+.btn-modern {
+  border-radius: 50px;
+  padding: 8px 20px;
+}
+
+
+</style>
+</head>
+
+  
+<body>
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">🧠 Myriam.dev</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">À propos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="formation.html">Compétences</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="projets.html">Projets</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link btn-contact" href="experience.html">experiences</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+ 
+ <main class="container">
+  <div class="jumbotron">
+    <div class="row my-3">
+      <div class="col">
+        <h1>Projets Perso ...</h1>
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col">
+        <input class="form-control" id="searchInput" type="text" placeholder="Search..">
+      </div>
+    </div>
+    <div class="row" id="lessonList">
+		<div class="col-12 col-lg-3"> <h3 class="card-title">Programmation web : Front-end </h3>
+
+		
+			<div class="card mb-2 mb-lg-0 border-light shadow-sm">
+			<img src="images/ecv.png"alt="Projet Portfolio HTML CSS Bootstrap"
+							class="card-img-top img-fluid w-auto"
+				loading="lazy">
+			<div class="card-body">
+				<p class="card-text"> 💻 Portfolio Informatique : Html, Css & Bootstrap
+				</p>
+				<a href="https://metenier73.github.io/web/index.html" class="btn btn-primary stretched-link"
+              onclick="window.open(this.href);return false ">Porfolio </a>
+			</div>
+			</div>
+			
+
+		
+		 <div class="card mb-2 mb-lg-0 border-light shadow-sm">
+          <img src="images/SKI.PNG" alt="Animations CSS modernes" loading="lazy"
+								class="card-img-top img-fluid w-auto">
+          <div class="card-body">
+            <p class="card-text"> 🎿 Portfolio Ski & SnowBoard : Html, Css,JavaScript, JQuery & Bootstrap
+            </p>
+
+            <a href="https://metenier73.github.io/PortfolioSki/"   class="btn btn-primary stretched-link"
+				target="_blank" 
+				rel="noopener noreferrer">
+				Portfolio
+			</a>
+          </div>
+        </div>	
+			
+        <div class="card mb-2 mb-lg-0 border-light shadow-sm">
+          <img src="images/snapface.png" alt="Projet Angular" loading="lazy"
+							class="card-img-top img-fluid w-auto">
+          <div class="card-body">
+            <p class="card-text">📸 Site dépot image : Angular
+            </p>
+            <a href="https://metenier73.github.io/snapface/ "   class="btn btn-primary stretched-link"
+				target="_blank" 
+				rel="noopener noreferrer">
+				Snapface
+			</a>
+          </div>
+        </div>
+		
+		 <div class="card mb-2 mb-lg-0 border-light shadow-sm">
+          <img src="images/React-app.png" alt="Projet Angular" loading="lazy"
+							class="card-img-top img-fluid w-auto">
+          <div class="card-body">
+            <p class="card-text">🌞 Prévision météolorogique dans le monde : React
+            </p>
+            <a href="https://metenier73.github.io/meteo-app/" class="btn btn-primary stretched-link"
+				target="_blank" 
+				rel="noopener noreferrer">
+				Meteo-App
+			</a>
+          </div>
+        </div>
+     
+      </div>
+	  
+	 <div class="col-12 col-lg-3"> <h3 class="card-title">Programmation Web : Full-Stack </h3>
+							
+							
+			<div class="card mb-2 mb-lg-0 border-light shadow-sm">
+			<img src="images/boutique.png" alt="Site Base de donnée" loading="lazy"
+							class="card-img-top img-fluid w-auto">
+			<div class="card-body">
+				<p class="card-text"> 💻 BoutiquePerso : Html, JavaScript, Mysql, PhpMyadmin
+				</p>
+				<a href="https://192.168.1.166:477/" class="btn btn-primary stretched-link"
+              onclick="window.open(this.href);return false ">BoutiquePerso </a>
+			</div>
+			</div>									
+	</div>						
+							
+							
+
+
+	  <div class="col-12 col-lg-3">  <h3 class="card-title">CMS</h3>
+        <div class="card mb-2 mb-lg-0 border-light shadow-sm">
+          <img src="images/WIXINFO.PNG" alt="CMS WIX" loading="lazy"
+							class="card-img-top img-fluid w-auto">
+          <div class="card-body">
+          
+            <p class="card-text">💻 Portfolio Informatique CMS : WIX </p>
+            <a href="https://meteniermyriam.wixsite.com/portfolio"  class="btn btn-primary stretched-link"
+				target="_blank" 
+				rel="noopener noreferrer">
+				portfolio
+			</a>
+          </div>
+        </div>
+		
+		 <div class="card mb-2 mb-lg-0 border-light shadow-sm">
+          <img src="images/SKIWIX.PNG" alt="CMS WIX" loading="lazy"
+							class="card-img-top img-fluid w-auto">
+          <div class="card-body">
+            <p class="card-text"> 🎿 Portfolio Ski & SnowBoard CMS : WIX </p>
+            <a href="https://meteniermyriam.wixsite.com/snowride73"  class="btn btn-primary stretched-link"
+				target="_blank" 
+				rel="noopener noreferrer">
+				portfolio
+			</a>
+          </div>
+        </div>
+		
+
+        <div class="card mb-2 mb-lg-0 border-light shadow-sm">
+          <img src="images/VEILLE.PNG" alt="CMS WIX" loading="lazy"
+							class="card-img-top img-fluid w-auto">
+          <div class="card-body">
+            
+            <p class="card-text"> ☕ Veille Java CMS : WIX </p>
+            <a href="https://meteniermyriam.wixsite.com/veille"  class="btn btn-primary stretched-link"
+				target="_blank" 
+				rel="noopener noreferrer">
+				Veille Java
+			</a>
+          </div>
+        </div>
+		
+
+      
+        <div class="card mb-2 mb-lg-0 border-light shadow-sm">
+          <img src="images/pizza.PNG" alt="CMS WIX" loading="lazy"
+							class="card-img-top img-fluid w-auto">
+          <div class="card-body">
+            <p class="card-text">🍕 Site pizzaïolo CMS : WIX - multi-plateforme sans programmation.</p>
+            <a href="https://meteniermyriam.wixsite.com/mapizza"  class="btn btn-primary stretched-link"
+				target="_blank" 
+				rel="noopener noreferrer">
+				pizzaïolo
+			</a>
+          </div>
+        </div>
+      </div>
+		
+  
+
+      <div class="col-12 col-lg-3"> <h3 class="card-title"> Programmer en Python</h3>
+        <div class="card mb-2 mb-lg-0 border-light shadow-sm">
+          <img src="images/script.png" alt="Programmation JavaScript" loading="lazy"
+							class="card-img-top img-fluid w-auto">
+          <div class="card-body">
+           
+            <p class="card-text">🐍 Boite à outils windows.</p>
+            <a href="https://github.com/metenier73/pythonScript.git" class="btn btn-primary stretched-link">Script python</a>
+          </div>
+        </div>
+	  </div>
+      
+        <div class="col-12 col-lg-3">            
+			<h3 class="card-title">Programmer avec WinDev</h3>
+
+        <div class="card mb-2 mb-lg-0 border-light shadow-sm">
+          <img src="images/Windev.png" alt="Programmation JavaScript" loading="lazy"
+							class="card-img-top img-fluid w-auto">
+          <div class="card-body">
+            <p class="card-text">🗻 Application Tronc Commun Montagne pour Windows.</p>
+          
+            <a href="https://drive.google.com/file/d/1sTcMM2z91UTYmvBOm-A3sDM_1PTtcktk/view?usp=drive_link" class="btn btn-primary stretched-link" title="Application sûr le tronc commun Montagne">Télécharger App</a></ol>
+
+          </div>
+        </div>
+      </div>
+	  
+	  
+		<div class="col-12 col-lg-3">            
+			<h3 class="card-title">Programmer avec IA</h3>
+			<div class="card mb-2 mb-lg-0 border-light shadow-sm">
+				<img src="images/2025SkiSnowboard.jpg" alt="Animations CSS modernes" loading="lazy"
+							class="card-img-top img-fluid w-auto">
+				<div class="card-body">
+					<p class="card-text">🎿 🏂 Site Monitrice Ski & SnowBoard : Html, Css & React
+					</p>
+					<a href="https://metenier73.github.io/ski-snowboard-tignes-valdisere/"  class="btn btn-primary stretched-link"
+				target="_blank" 
+				rel="noopener noreferrer">
+				Monitrice Ski & SnowBoard
+			</a>
+				</div>
+			</div>
+			
+			
+			<div class="card mb-2 mb-lg-0 border-light shadow-sm">
+				<img src="images/Psychologie.png" alt="Animations CSS modernes" loading="lazy"
+							class="card-img-top img-fluid w-auto">
+				<div class="card-body">
+					<p class="card-text">🧠🔍✨️ Site Psychology : Html, Css & JavaScript
+					</p>
+					<a href="https://afbrkuwm.manus.space/"  class="btn btn-primary stretched-link"
+					target="_blank" 
+					rel="noopener noreferrer">
+				 Découvrez votre esprit </a>	
+				</div>
+			</div>
+			
+			
+			<div class="card mb-2 mb-lg-0 border-light shadow-sm">
+				<img src="images/IntelligenceArtificielle.png" alt="Animations CSS modernes" class="card-img-top img-fluid w-auto"
+					loading="lazy">
+				<div class="card-body">
+					<p class="card-text">🎓 🤖 ✨ Site Intelligence Artificielle : Html, Css & JavaScript
+					</p>
+					<a href="https://ajnvlngh.manus.space/"  class="btn btn-primary stretched-link"
+					target="_blank" 
+					rel="noopener noreferrer">
+				Cours Complet sur l'Intelligence Artificielle </a> 
+				</div>
+				
+			</div>
+			
+			
+			
+		</div>
+			
+			
+			
+		<div class="col-12 col-lg-3">            
+			<h3 class="card-title">CMS avec IA</h3>	
+			<div class="card mb-2 mb-lg-0 border-light shadow-sm">
+				<img src="images/ski-booking.png" alt="Projet Angular" 	class="card-img-top img-fluid w-auto"
+					loading="lazy">
+				<div class="card-body">
+				<p class="card-text">⛷️ 🤖 Site  monitrice de ski & snowboard : lovable.dev - IA
+				</p>
+				<a href="https://ski-booking-rendezvous.lovable.app/" 
+					class="btn btn-primary stretched-link"
+					target="_blank" 
+					rel="noopener noreferrer">
+				Monitrice Ski & Snowboard
+				</a>
+				
+				</div>
+			</div>
+			
+			<div class="card mb-2 mb-lg-0 border-light shadow-sm">
+				<img src="images/Monitrice.png" alt="CMS : soloist"	class="card-img-top img-fluid w-auto">
+					loading="lazy">
+				<div class="card-body">
+            
+					<p class="card-text">⛷️ Site monitrice de Ski Snowboard : Soloist </p>
+					<a href="https://soloist.ai/monitricedeskisnowboard"  class="btn btn-primary stretched-link"
+				target="_blank" 
+				rel="noopener noreferrer">
+				 Monitrice Ski & SnowBoard
+			</a>
+				</div>
+			</div>
+		
+		</div>
+		
+		
+			
+		<div class="col-12 col-lg-3">            
+			<h3 class="card-title">Projet IA</h3>	
+				<div class="card mb-2 mb-lg-0 border-light shadow-sm">
+					<div class="card-body">
+					<p class="card-text">🌍 Projet réchauffement climatique : API GIEC avec Django REST Framework</p>
+					<a href="https://github.com/metenier73/GIEC.git" title="Projet GIEC"
+									onclick="window.open(this.href);return false"class="btn btn-primary stretched-link">API GIEC </a>
+					</div> 
+				</div>
+		
+			<div class="card mb-2 mb-lg-0 border-light shadow-sm"> 
+				<div class="card-body">
+				<p class="card-text">🎭 Détection d'Émotions Faciales avec Deep Learning </p>
+										
+				<a href="https://github.com/metenier73/D-tection-d-motions-faciales.git" title="D-tection-d-motions-faciales"
+									onclick="window.open(this.href);return false" class="btn btn-primary stretched-link">App</a>
+				</div>
+			</div>
+		</div>
+
+      <!-- <div class="col-12 col-lg-4">
+        <div class="card mb-4 mb-lg-0 border-light shadow-sm">
+          <img src="images/lessons/js.jpeg" alt="Programmation JavaScript" class="card-img-top w-25">
+          <div class="card-body">
+            <h4 class="card-title">Programmer avec JavaScript</h4>
+            <p class="card-text">Ce cours est conçu pour vous enseigner les bases du langage de programmation
+              JavaScript.</p>
+            <a href="lesson-1.html" class="btn btn-primary stretched-link">Démarrer l'apprentissage</a>
+          </div>
+        </div>
+      </div>-->
+	  
+	  
+	  
+	</div>	  
+ 
+
+      <!--Formulaire-->
+      <div class="row">
+        <div class="col">
+          <h3>Parcourez mes sites et faite votre évaluation :</h3>
+          <ul>
+            <li>Combien de temps de visualisation (minutes & second) ;</li>
+            <li>Un commentaire avec point positif & négatif;</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <hr>
+          <h5><u><em>Commentaire :</em></u> </h5>
+          <form>
+            <div class="form-group mt-3">
+              <label for="timeInput">Temps :</label>
+              <input type="text" class="form-control" id="timeInput" placeholder="mm:ss" aria-describedby="timeHelp">
+            </div>
+            <div class="form-group mt-3">
+              <label for="note">Note :</label>
+              <textarea id="note" rows="5" class="form-control" required></textarea>
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  Rendre cette notation publique
+                </label>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Envoyer</button>
+          </form>
+        </div>
+      </div>
+
+ </main>
+
+
+
+
+    </div>
+  </div>
+  
+  <footer class="bg-light mt-4">
+ 
+    <div class="container">
+      <div class="row pt-4 pb-3">
+        <div class="col">
+          <ul class="list-inline text-center">
+            <li class="list-inline-item">
+              <p>&copy; - Author : metenier myriam
+                <a href="mailto:metenier@yahoo.fr">Ecrivez-moi !</a>
+
+              </p>
+            </li>
+            <li class="list-inline-item">&middot;</li>
+            <li class="list-inline-item"><a href="https://www.linkedin.com/in/metenier-informatique"
+                target="_blank">Linkedin</a>
+            </li>
+            <li class=" list-inline-item">&middot;</li>
+            <li class="list-inline-item">
+              <a href="https://www.developpez.com/" target="_blank">Actualité Informatique</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+ 
+</footer>
+ <!-- ===== BOOTSTRAP JS ===== -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- ===== SEARCH JS ===== -->
+<script>
+document.getElementById("searchInput").addEventListener("keyup", function () {
+  let value = this.value.toLowerCase();
+  let cards = document.querySelectorAll("#projectList .col-12");
+
+  cards.forEach(function (card) {
+    card.style.display = card.textContent.toLowerCase().includes(value)
+      ? ""
+      : "none";
+  });
+});
+</script>
+  
+</body>
+</html>

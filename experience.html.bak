@@ -1,341 +1,260 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="fr">
 <head>
-  <!-- Required meta tags -->
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="Metenier Myriam, Développement front-end">
   <link rel="icon" href="images/papillon.ico" />
   <link rel="stylesheet" href="css/style.css" />
-
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,0" />
-  <title>Portfolio Informatique</title>
-
- 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Expériences | Myriam Metenier</title>
 </head>
-
 <body>
-  <div class="bg-dark">
-    <div class="container">
-      <div class="row">
-        <nav class="col navbar navbar-expand-lg navbar-dark">
-          <a class="navbar-brand" href="index.html">
-		    <img src="images/Informa-removebg-preview.png" width="50" height="50" alt="Info Logo" />
 
-            <!-- <img src="images/logo.png" width="50" height="50" alt="Info Logo" />-->
-            <span class="material-symbols-outlined">
-              psychology
-            </span>
-            Portfolio Informatique
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div id="navbarContent" class="collapse navbar-collapse">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Accueil</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="formation.html">Formation</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="projets.html">Projets</a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="experience.html">Expèrience Pro</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-    </div>
-  </div>
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
   <div class="container">
-    <div class="row my-3">
-      <div class="col">
-        <h1>Expèrience professionnelle</h1>
+    <a class="navbar-brand fw-bold" href="#">🧠 Myriam.dev</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-
-        <a href="images/AIengineerCV.pdf">
-          <img src="images/mimi.png" alt="Cv AI Engineer" class="img-rounded" /></br> </a>
-
-
-      </div>
-    </div>
-    <div class="row mb-3">
-      <div class="col">
-        <input class="form-control" id="searchInput" type="text" placeholder="Search..">
-      </div>
-    </div>
-    <div class="row" id="lessonList">
-
-      <div class="col-12 col-lg-4">
-        <div class="card mb-4 mb-lg-0 border-light shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title">Juin - Octobre 2020 Maisadour :</h5>
-            <p class="card-text">
-            <ul><u>Technicienne Informatique :</u>
-              <li> Migration poste et profile utilisateur serveur Microsoft 2016.</li>
-              <li> Prise de RDV auprès des utilisateurs.</li>
-              <li>Gestion de planning en autonomie.</li>
-              <li>Génération de rapport d’avancement.</li>
-              <li> Migration client office 365 (Outlook, Onedrive, Onenote).</li>
-              <li> Vérification de bon fonctionnement avec l’utilisateur.</li>
-              <li>Accompagnement au changement auprès des utilisateurs (Aide à la mise en place de message absence sur
-                l’ancienne adresse mail, création signature, etc.. ).</li>
-              <li> Assistance technique aux utilisateurs post migration.</li>
-              </li>
-            </ul>
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 col-lg-4">
-        <div class="card mb-4 mb-lg-0 border-light shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title">Mai - Octobre 2019 Thales avionics </h5>
-            <p class="card-text">
-            <ul> <u>Analyste world wide :</u>
-              <li> Support N1 : windows 7 & android 5 à Pie.</li>
-              <li> Résolution de pannes, d’incidents et d'accompagnement des utilisateurs pour messagerie sécurisé
-                Android et IOS.</li>
-              <li> Résolution de pannes ou d’incidents, et accompagnement des utilisateurs thalèsien ne parlant pas
-                français. </li>
-            </ul>
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 col-lg-4">
-        <div class="card mb-4 mb-lg-0 border-light shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title">Mars 2018 Berger-Levrault - SII </h5>
-            <p class="card-text">
-            <ul><u>Analyste Programmeur : </u>
-              <li>Support N1 : Apache, javaEE</li>
-              <li>Gérer et résoudre des incidents sous JavaEE, wiki de l'application superviser « Résurgence »</li>
-            </ul>
-            </p>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="col-12 col-lg-4">
-        <div class="card mb-4 mb-lg-0 border-light shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title">Mai 2015- Novembre 2017 ATS – Ministère Justice</h5>
-            <p class="card-text">
-            <ul><u>Technicien informatique (2017) : </u>
-              <li> Gestion du matériel, des logiciels et des périphériques.
-              <li> Installation, dépannage et maintenance des postes informatiques. Migration et planification de la
-                migration de postes informatiques.
-              </li>
-            </ul>
-
-            <ul><u>Administrateur système & réseau (Juillet-Octobre 2016) :</u>
-              <li> Administration et maintenance des serveurs (gestion des droits, des groupes, des utilisateurs,
-                partage des ressources et des impressions, gestion des copieurs multifonctions ...).</li>
-              <li>Installation des mises à jour de logiciels, correspondance technique.</li>
-              <li>Aide et assistance aux utilisateurs (personnels du DIT et du ministère de la justice et prestataire
-                externe).</li>
-              <li>Gestion des incidents : prévention et détection des pannes.</li>
-              <li>Supervisions des sauvegardes.</li>
-              </li>
-            </ul>
-
-            <ul><u>Technicien support informatique (Juin - Septembre 2015) :</u>
-              <li>Aide et assistance aux utilisateurs (personnels du DIT et du ministère de la justice et prestataire
-                externe).</li>
-              <li>Gestion des incidents : prévention et détection des pannes.
-              </li>
-            </ul>
-            </p>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="col-12 col-lg-4">
-        <div class="card mb-4 mb-lg-0 border-light shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title">Juillet 2017 ALTECA - Home Office </h5>
-            <p class="card-text">
-            <ul><u>Technicienne informatique 24/7 : </u>
-              <li>Supervision à distance des migrations applicatif & donnée : Windows Server 2008 R2 vers Windows Server
-                2012.</li>
-              <li>Planifications des installations et des pré-requis
-                sous IBM-Application</li>
-            </ul>
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 col-lg-4">
-        <div class="card mb-4 mb-lg-0 border-light shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title">Hard Skill </h5>
-            <p class="card-text">
-
-            <div class="panel-heading">
-              <a href="#item10" data-toggle="collapse"> System ... </a>
-            </div>
-            <div id="item10" class="panel-collapse collapse ">
-              <div class="panel-body">
-                <li><u>Microsoft :</u></li>
-                <ol>Windows Xp à Windows 11 <meter max="100" low="25" high="100" optimum="80" value="80"></meter>80%</ol>
-                <ol>Windows (CE 6.0 où CE 7.0) <meter max="100" low="25" high="100" optimum="80" value="80"></meter>80%</ol>
-
-                <li><u>Linux : </u></li>
-                <ol>Debian, Ubuntu <meter max="100" low="25" high="100" optimum="50" value="60"></meter>60%</ol>
-                <ol>Platine ITIUM : 2910, 4010, 4050 6050 <meter max="100" low="25" high="100" optimum="80"
-                    value="80"></meter>80%</ol>
-
-                <li><u>Apple : </u></li>
-                <ol>MacOs Lion <meter max="100" low="25" high="100" optimum="50" value="40"></meter>40%</ol>
-
-              </div>
-            </div>
-
-            <div class="panel-heading">
-              <a href="#item11" data-toggle="collapse"> Virtualisation ... </a>
-            </div>
-            <div id="item11" class="panel-collapse collapse ">
-              <div class="panel-body">
-                <li>Microsoft : Vmware, Gestionnaire Hyper-V <meter max="100" low="25" high="100" optimum="80"
-                    value="80"></meter>80%</li>
-                <li>Oracle : VirtualBox <meter max="100" low="25" high="100" optimum="80" value="80"></meter>80%</li>
-
-              </div>
-            </div>
-
-            <div class="panel-heading">
-              <a href="#item12" data-toggle="collapse"> Android ... </a>
-            </div>
-            <div id="item12" class="panel-collapse collapse ">
-              <div class="panel-body">
-                <li>5 à 10 <meter max="100" low="25" high="100" optimum="80" value="80"></meter>80%</li>
-              </div>
-            </div>
-
-            <div class="panel-heading">
-              <a href="#item13" data-toggle="collapse"> Serveur ... </a>
-            </div>
-            <div id="item13" class="panel-collapse collapse ">
-              <div class="panel-body">
-                <li><u>Linux : </u></li>
-                <ol>Apache, WampServer <meter max="100" low="25" high="75" optimum="80" value="80"></meter></ol>
-                <li><u>Microsoft : </u></li>
-                <ol>IIS <meter max="100" low="25" high="100" optimum="50" value="50"></meter>50%</ol>
-                <ol>Serveur windows 2008 R2 <meter max="100" low="25" high="100" optimum="80" value="80"></meter>80%</ol>
-                <ol>Serveur windows 2012 <meter max="100" low="25" high="100" optimum="80" value="80"></meter>80%</ol>
-                <ol>Serveur windows 2016 <meter max="100" low="25" high="100" optimum="80" value="80"></meter>80%</ol>
-                <ol>Microsoft Exchange 2018 <meter max="100" low="25" high="100" optimum="80" value="80"></meter>80%</ol>
-              </div>
-            </div>
-
-            <div class="panel-heading">
-              <a href="#item14" data-toggle="collapse"> Base de donnée ... </a>
-            </div>
-            <div id="item14" class="panel-collapse collapse ">
-              <div class="panel-body">
-                <li>MariaDB, Mysql, PostgreSql <meter value="80" max="100"></meter>80%</li>
-                <li>Uml, MCD : WinDesign, DBDesigner <meter max="100" low="25" high="100" optimum="80"
-                    value="80"></meter>80%</li>
-              </div>
-            </div>
-
-            <div class="panel-heading">
-              <a href="#item15" data-toggle="collapse"> Environnement de développement IDE ... </a>
-            </div>
-            <div id="item15" class="panel-collapse collapse ">
-              <div class="panel-body">
-                <li>Netbeans, AndroidStudio, intelliJ, Eclipse, Visual Studio ...<meter max="100" low="25" high="100"
-                    optimum="50" value="70"></meter>70%</li>
-              </div>
-            </div>
-
-            <div class="panel-heading">
-              <a href="#item16" data-toggle="collapse"> Gestion des incidents ... </a>
-            </div>
-            <div id="item16" class="panel-collapse collapse ">
-              <div class="panel-body">
-                <li>Tid, Jira, Glpi <meter max="100" low="25" high="100" optimum="80" value="80"></meter>80%</li>
-                <li> Gestion du parc informatique : Easy Vista, Ocs <meter max="100" low="25" high="100" optimum="80"
-                    value="80"></meter>80%</li>
-
-              </div>
-            </div>
-
-            <div class="panel-heading">
-              <a href="#item17" data-toggle="collapse"> Accès distant ...</a>
-            </div>
-            <div id="item17" class="panel-collapse collapse ">
-              <div class="panel-body">
-                <li>TeamViewer, VNC, RDP, BeyondTrust, PuTTY, WinSCP, FileZilla <meter max="100" low="25" high="100"
-                    optimum="80" value="80"></meter>80%</li>
-              </div>
-            </div>
-
-
-
-            </p>
-          </div>
-        </div>
-      </div>
-
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto align-items-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+        <li class="nav-item"><a class="nav-link" href="formation.html">Formation</a></li>
+        <li class="nav-item"><a class="nav-link" href="projets.html">Projets</a></li>
+        <li class="nav-item"><a class="nav-link active" href="#">Expériences</a></li>
+        <li class="nav-item ms-3">
+          <button class="btn btn-sm btn-outline-light" onclick="toggleDark()">🌙</button>
+        </li>
+      </ul>
     </div>
   </div>
-  <div class="bg-light mt-4">
-    <div class="container">
-      <div class="row pt-4 pb-3">
-        <div class="col">
-          <ul class="list-inline text-center">
-            <li class="list-inline-item">
-              <p>&copy; - Author : metenier myriam
-                <a href="mailto:metenier@yahoo.fr">Ecrivez-moi !</a>
+</nav>
 
-              </p>
-            </li>
-            <li class="list-inline-item">&middot;</li>
-            <li class="list-inline-item"><a href="https://www.linkedin.com/in/metenier-informatique
-"
-                target="_blank">Linkedin</a>
-            </li>
-            <li class=" list-inline-item">&middot;</li>
-            <li class="list-inline-item">
-              <a href="https://www.developpez.com/" target="_blank">Actualité Informatique</a>
-            </li>
-          </ul>
-        </div>
-      </div>
+<div class="container py-5">
+
+  <!-- ===== TITLE ===== -->
+  <div class="row mb-4">
+    <div class="col">
+      <h1 class="fw-bold text-center">💼 Expériences Professionnelles</h1>
     </div>
   </div>
 
- <!-- ===== BOOTSTRAP JS ===== -->
+<!-- CV IMAGE -->
+  <div class="row mb-4 justify-content-center">
+    <div class="col-auto text-center">
+      <a href="images/CVadmin.pdf" target="_blank">
+        <img src="images/Informa-removebg-preview.png" class="img-fluid w-25" alt="CV Administrateur Système & Réseau">
+        <p class="mt-2">Télécharger mon CV</p>
+      </a>
+    </div>
+  </div>
+
+  <!-- ===== SEARCH ===== -->
+  <div class="row mb-4">
+    <div class="col-md-6 mb-3 mb-md-0">
+      <input id="searchInput" class="form-control" type="text" placeholder="🔍 Rechercher une expérience...">
+    </div>
+  </div>
+
+  <!-- ===== EXPERIENCE CARDS ===== -->
+  <div class="row g-4" id="experienceList">
+
+    <!-- Experience 1 -->
+    <div class="col-12 col-md-6 col-lg-4 experience-card">
+      <div class="card shadow-sm h-100">
+        <div class="card-body">
+          <h5 class="card-title">Juin - Octobre 2020 Maisadour</h5>
+          <p class="card-text">
+            <strong>Technicienne Informatique :</strong>
+            <ul>
+              <li>Migration poste et profile utilisateur serveur Microsoft 2016</li>
+              <li>Prise de RDV auprès des utilisateurs</li>
+              <li>Gestion de planning en autonomie</li>
+              <li>Génération de rapport d’avancement</li>
+              <li>Migration client Office 365 (Outlook, Onedrive, Onenote)</li>
+              <li>Vérification de bon fonctionnement avec l’utilisateur</li>
+              <li>Accompagnement au changement (signature, message absence…)</li>
+              <li>Assistance post-migration</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Experience 2 -->
+    <div class="col-12 col-md-6 col-lg-4 experience-card">
+      <div class="card shadow-sm h-100">
+        <div class="card-body">
+          <h5 class="card-title">Mai - Octobre 2019 Thales Avionics</h5>
+          <p class="card-text">
+            <strong>Analyste World Wide :</strong>
+            <ul>
+              <li>Support N1 : Windows 7 & Android 5 à Pie</li>
+              <li>Résolution incidents et accompagnement utilisateurs pour messagerie sécurisée</li>
+              <li>Assistance aux utilisateurs non francophones</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Experience 3 -->
+    <div class="col-12 col-md-6 col-lg-4 experience-card">
+      <div class="card shadow-sm h-100">
+        <div class="card-body">
+          <h5 class="card-title">Mars 2018 Berger-Levrault - SII</h5>
+          <p class="card-text">
+            <strong>Analyste Programmeur :</strong>
+            <ul>
+              <li>Support N1 : Apache, JavaEE</li>
+              <li>Gérer et résoudre des incidents sous JavaEE et Wiki de l'application superviser « Résurgence »</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Experience 4 -->
+    <div class="col-12 col-md-6 col-lg-4 experience-card">
+      <div class="card shadow-sm h-100">
+        <div class="card-body">
+          <h5 class="card-title">Mai 2015 - Novembre 2017 ATS – Ministère Justice</h5>
+          <p class="card-text">
+            <strong>Technicien informatique & Administrateur système & réseau :</strong>
+            <ul>
+              <li>Gestion du matériel, logiciels et périphériques</li>
+              <li>Installation, dépannage et maintenance des postes</li>
+              <li>Administration serveurs (Windows & Linux)</li>
+              <li>Assistance aux utilisateurs et gestion des incidents</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Experience 5 -->
+    <div class="col-12 col-md-6 col-lg-4 experience-card">
+      <div class="card shadow-sm h-100">
+        <div class="card-body">
+          <h5 class="card-title">Juillet 2017 ALTECA - Home Office</h5>
+          <p class="card-text">
+            <strong>Technicienne informatique 24/7 :</strong>
+            <ul>
+              <li>Supervision des migrations applicatives & données</li>
+              <li>Windows Server 2008 R2 vers 2012</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- HARD SKILLS ACCORDION -->
+    <div class="col-12 col-md-6 col-lg-4 experience-card">
+      <div class="card shadow-sm h-100">
+        <div class="card-body">
+          <h5 class="card-title text-center mb-3">💻 Hard Skills</h5>
+          <div class="accordion" id="hardSkillsAccordion">
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingWeb">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWeb">Web</button>
+              </h2>
+              <div id="collapseWeb" class="accordion-collapse collapse" data-bs-parent="#hardSkillsAccordion">
+                <div class="accordion-body">
+                  HTML / CSS / JavaScript / Bootstrap / Angular / React
+                  <div class="progress mb-2"><div class="progress-bar bg-success" style="width:80%">80%</div></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingBackend">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBackend">Backend / DB</button>
+              </h2>
+              <div id="collapseBackend" class="accordion-collapse collapse" data-bs-parent="#hardSkillsAccordion">
+                <div class="accordion-body">
+                  Python / Django / PHP / MySQL
+                  <div class="progress mb-2"><div class="progress-bar bg-info" style="width:70%">70%</div></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingIA">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseIA">IA / Machine Learning</button>
+              </h2>
+              <div id="collapseIA" class="accordion-collapse collapse" data-bs-parent="#hardSkillsAccordion">
+                <div class="accordion-body">
+                  Deep Learning / API / REST / NLP
+                  <div class="progress mb-2"><div class="progress-bar bg-danger" style="width:60%">60%</div></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTools">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTools">Outils & Autres</button>
+              </h2>
+              <div id="collapseTools" class="accordion-collapse collapse" data-bs-parent="#hardSkillsAccordion">
+                <div class="accordion-body">
+                  Git / GitHub / Linux / Windows / Docker / Cloud
+                  <div class="progress mb-2"><div class="progress-bar bg-warning" style="width:65%">65%</div></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer class="bg-light mt-5 py-4 text-center">
+  <p>&copy; 2026 – Metenier Myriam</p>
+  <a href="mailto:metenier@yahoo.fr">Ecrivez-moi</a> |
+  <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+</footer>
+
+<!-- ===== BOOTSTRAP JS ===== -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-<!-- ===== SEARCH JS ===== -->
 <script>
+// ===== SEARCH =====
 document.getElementById("searchInput").addEventListener("keyup", function () {
-  let value = this.value.toLowerCase();
-  let cards = document.querySelectorAll("#projectList .col-12");
-
-  cards.forEach(function (card) {
-    card.style.display = card.textContent.toLowerCase().includes(value)
-      ? ""
-      : "none";
+  const value = this.value.toLowerCase();
+  const cards = document.querySelectorAll(".experience-card");
+  cards.forEach(card => {
+    card.style.display = card.textContent.toLowerCase().includes(value) ? "" : "none";
   });
 });
-</script>
-</body>
 
+// ===== NAVBAR COLLAPSE AFTER CLICK =====
+const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+const navbarCollapse = document.getElementById('navbarNav');
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    if (navbarCollapse.classList.contains('show')) {
+      new bootstrap.Collapse(navbarCollapse).hide();
+    }
+  });
+});
+
+// ===== DARK MODE =====
+function toggleDark() { 
+  document.body.classList.toggle("dark-mode"); 
+}
+
+// ===== SCROLL EFFECT =====
+window.addEventListener("scroll", function() {
+  document.querySelector(".custom-navbar").classList.toggle("scrolled", window.scrollY > 50);
+});
+</script>
+
+</body>
 </html>

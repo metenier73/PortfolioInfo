@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Projets | Myriam Metenier – Développeuse Web & IA</title>
+
+  <meta name="description" content="Portfolio de Myriam Metenier – Développeuse Web spécialisée Front-end, Full-Stack et Intelligence Artificielle.">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">🧠 Myriam.dev</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">À propos</a></li>
+        <li class="nav-item"><a class="nav-link" href="formation.html">Compétences</a></li>
+        <li class="nav-item"><a class="nav-link active" href="#">Projets</a></li>
+        <li class="nav-item"><a class="nav-link" href="experience.html">Expériences</a></li>
+        <li class="nav-item ms-3">
+          <button class="btn btn-sm btn-outline-light" onclick="toggleDark()">🌙</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero-section text-center text-white">
+  <div class="container">
+    <h1 class="display-4 fw-bold">👩‍💻 Myriam Metenier</h1>
+    <p class="lead">Développeuse Web • Full-Stack • Intelligence Artificielle</p>
+    <a href="#projects" class="btn btn-modern btn-lg mt-3">Voir mes projets</a>
+  </div>
+</section>
+
+<main class="container py-5" id="projects">
+
+  <!-- STACK -->
+  <div class="text-center mb-5">
+    <h4 class="fw-bold mb-3">🛠️ Stack Technique</h4>
+    <div class="d-flex flex-wrap justify-content-center gap-2">
+      <span class="badge bg-primary">HTML5</span>
+      <span class="badge bg-info">CSS3</span>
+      <span class="badge bg-warning text-dark">JavaScript</span>
+      <span class="badge bg-danger">Angular</span>
+      <span class="badge bg-success">React</span>
+      <span class="badge bg-dark">Bootstrap 5</span>
+      <span class="badge bg-secondary">Python</span>
+      <span class="badge bg-primary">Django</span>
+      <span class="badge bg-danger">Deep Learning</span>
+      <span class="badge bg-success">MySQL</span>
+    </div>
+  </div>
+
+  <!-- SEARCH + FILTER -->
+  <div class="row mb-4">
+    <div class="col-md-6">
+      <input id="searchInput" class="form-control form-control-lg" placeholder="🔍 Rechercher un projet...">
+    </div>
+    <div class="col-md-6 text-md-end mt-3 mt-md-0">
+      <button class="btn btn-outline-primary me-2" onclick="filterCategory('all')">Tous</button>
+      <button class="btn btn-outline-primary me-2" onclick="filterCategory('frontend')">Front</button>
+      <button class="btn btn-outline-primary me-2" onclick="filterCategory('fullstack')">Full-Stack</button>
+      <button class="btn btn-outline-primary me-2" onclick="filterCategory('ia')">IA</button>
+      <button class="btn btn-outline-primary" onclick="filterCategory('python')">Python</button>
+    </div>
+  </div>
+
+  <!-- PROJECTS -->
+  <div class="row g-4">
+
+    <!-- FRONTEND -->
+    <div class="col-md-4 project-card" data-category="frontend">
+      <div class="card h-100">
+        <img src="images/ecv.png" class="card-img-top" loading="lazy">
+        <div class="card-body">
+          <h5>Portfolio HTML / CSS</h5>
+          <p>Portfolio Bootstrap responsive.</p>
+          <a href="https://metenier73.github.io/web/index.html" target="_blank" class="btn btn-modern">Voir</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- REACT -->
+    <div class="col-md-4 project-card" data-category="frontend">
+      <div class="card h-100">
+        <img src="images/React-app.png" class="card-img-top" loading="lazy">
+        <div class="card-body">
+          <h5>Météo React</h5>
+          <p>Application météo mondiale.</p>
+          <a href="https://metenier73.github.io/meteo-app/" target="_blank" class="btn btn-modern">Voir</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- FULL STACK -->
+    <div class="col-md-4 project-card" data-category="fullstack">
+      <div class="card h-100">
+        <img src="images/boutique.png" class="card-img-top" loading="lazy">
+        <div class="card-body">
+          <h5>BoutiquePerso</h5>
+          <p>HTML, JS, MySQL, PHP.</p>
+          <a href="#" class="btn btn-modern">Projet Local</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- PYTHON -->
+    <div class="col-md-4 project-card" data-category="python">
+      <div class="card h-100">
+        <img src="images/script.png" class="card-img-top" loading="lazy">
+        <div class="card-body">
+          <h5>Scripts Python</h5>
+          <p>Automatisation Windows.</p>
+          <a href="https://github.com/metenier73/pythonScript.git" target="_blank" class="btn btn-modern">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- IA -->
+    <div class="col-md-4 project-card" data-category="ia">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5>API GIEC</h5>
+          <p>Django REST Framework.</p>
+          <a href="https://github.com/metenier73/GIEC.git" target="_blank" class="btn btn-modern">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</main>
+
+<footer class="text-center py-4">
+  <p>© 2026 – Myriam Metenier | Développeuse Web & IA</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+function toggleDark(){
+  document.body.classList.toggle("dark-mode");
+}
+
+function filterCategory(category){
+  const cards = document.querySelectorAll(".project-card");
+  cards.forEach(card=>{
+    if(category === "all"){
+      card.style.display = "";
+    } else {
+      card.style.display = card.dataset.category === category ? "" : "none";
+    }
+  });
+}
+
+document.getElementById("searchInput").addEventListener("keyup", function(){
+  let value = this.value.toLowerCase();
+  let cards = document.querySelectorAll(".project-card");
+  cards.forEach(card=>{
+    card.style.display = card.textContent.toLowerCase().includes(value) ? "" : "none";
+  });
+});
+</script>
+
+</body>
+</html>

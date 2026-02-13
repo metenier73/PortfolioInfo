@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="author" content="Metenier Myriam, Developpement front-end">
+<link rel="icon" href="images/papillon.ico" />
+<link rel="stylesheet" href="css/style.css" />
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<title>Portfolio Informatique</title>
+
+<style>
+
+/* ===== GLOBAL ===== */
+body {
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', sans-serif;
+  padding-top: 80px;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  backdrop-filter: blur(10px);
+  background: rgba(0, 0, 0, 0.6) !important;
+}
+
+/* ===== CARDS ===== */
+.card {
+  border: none;
+  border-radius: 16px;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.card img {
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+/* ===== PROGRESS ===== */
+.progress {
+  background-color: #e9ecef;
+  border-radius: 50px;
+}
+
+.progress-bar {
+  border-radius: 50px;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+/* ===== BUTTON ===== */
+.btn-modern {
+  border-radius: 50px;
+  padding: 8px 20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">🧠 Myriam.dev</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">À propos</a></li>
+        <li class="nav-item"><a class="nav-link" href="formation.html">Compétences</a></li>
+        <li class="nav-item"><a class="nav-link" href="projets.html">Projets</a></li>
+        <li class="nav-item"><a class="nav-link" href="experience.html">Expériences</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+
+  <!-- ===== TITLE ===== -->
+  <div class="row my-4">
+    <div class="col">
+      <h1 class="fw-bold">🎓 Formation Académique</h1>
+    </div>
+  </div>
+
+  <!-- ===== SEARCH ===== -->
+  <div class="row mb-4">
+    <div class="col">
+      <input class="form-control" id="searchInput" type="text" placeholder="Rechercher...">
+    </div>
+  </div>
+
+  <div class="row g-4" id="lessonList">
+
+    <!-- ===== CARD 1 ===== -->
+    <div class="col-12 col-lg-4">
+      <div class="card shadow-sm h-100">
+        <div class="card-body">
+          <h5 class="card-title">📚 Administrateur Infrastructure & Cloud - 2022</h5>
+
+          <ul>
+            <li>Gestion réseaux et systèmes en local ou cloud</li>
+            <li>Configuration et disponibilité des infrastructures</li>
+            <li>Administration Linux & Windows</li>
+          </ul>
+        </div>
+        <img src="images/AdministrateurInfrastructureCloudDiplome.png"
+             alt="Diplôme Administrateur Infrastructure Cloud"
+             class="card-img-top">
+      </div>
+    </div>
+
+    <!-- ===== CARD 2 ===== -->
+    <div class="col-12 col-lg-4">
+      <div class="card shadow-sm h-100">
+        <div class="card-body">
+          <h5 class="card-title">📊 BTS SIO SLAM - 2018</h5>
+
+          <ul>
+            <li>Développement applications métiers</li>
+            <li>Analyse des besoins</li>
+            <li>Maintenance & qualité services IT</li>
+          </ul>
+        </div>
+        <img src="images/btsSIOdiplome.png"
+             alt="Diplôme BTS SIO SLAM"
+             class="card-img-top">
+      </div>
+    </div>
+
+    <!-- ===== HARD SKILLS ===== -->
+    <div class="col-12 col-lg-4">
+      <div class="card shadow-lg rounded-4 h-100">
+        <div class="card-body p-4">
+
+          <h5 class="fw-bold text-center mb-3">💻 Hard Skills</h5>
+
+          <button class="btn btn-outline-primary w-100 mb-3"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#skillsCollapse">
+            Voir les compétences
+          </button>
+
+          <div class="collapse" id="skillsCollapse">
+
+            <h6 class="fw-bold mt-3">Web</h6>
+
+            <p class="mb-1">HTML / CSS / JS</p>
+            <div class="progress mb-2" style="height:8px;">
+              <div class="progress-bar bg-success progress-bar-striped progress-bar-animated"
+                   style="width:75%">75%</div>
+            </div>
+
+            <p class="mb-1">Python</p>
+            <div class="progress mb-2" style="height:8px;">
+              <div class="progress-bar bg-info progress-bar-striped progress-bar-animated"
+                   style="width:60%">60%</div>
+            </div>
+
+            <p class="mb-1">Git</p>
+            <div class="progress mb-2" style="height:8px;">
+              <div class="progress-bar bg-dark progress-bar-striped progress-bar-animated"
+                   style="width:65%">65%</div>
+            </div>
+
+            <p class="mb-1">MySQL</p>
+            <div class="progress mb-2" style="height:8px;">
+              <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated"
+                   style="width:65%">65%</div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer class="bg-light mt-5 py-4">
+  <div class="container text-center">
+    <p class="mb-1">&copy; 2026 - Metenier Myriam</p>
+    <a href="mailto:metenier@yahoo.fr">Ecrivez-moi</a> |
+    <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+  </div>
+</footer>
+
+<!-- ===== BOOTSTRAP JS ===== -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- ===== SEARCH JS ===== -->
+<script>
+document.getElementById("searchInput").addEventListener("keyup", function () {
+  let value = this.value.toLowerCase();
+  let cards = document.querySelectorAll("#lessonList .col-12");
+
+  cards.forEach(function (card) {
+    card.style.display = card.textContent.toLowerCase().includes(value)
+      ? ""
+      : "none";
+  });
+});
+</script>
+
+</body>
+</html>
