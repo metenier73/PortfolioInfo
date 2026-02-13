@@ -6,9 +6,10 @@
 <meta name="author" content="Metenier Myriam, Développement front-end">
 <title>Projets | Myriam Metenier – Développeuse Web & IA</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/style.scss" />
 <link rel="stylesheet" href="css/projet.css">
 <link rel="stylesheet" href="css/style.css" />
-<link rel="stylesheet" href="css/style.scss" />
+
 </head>
 <body>
 
@@ -77,6 +78,9 @@
       <button class="btn btn-outline-primary me-2" onclick="filterCategory('ia')">IA</button>
       <button class="btn btn-outline-primary me-2" onclick="filterCategory('python')">Python</button>
       <button class="btn btn-outline-primary" onclick="filterCategory('cms')">CMS</button>
+	  <button class="btn btn-outline-primary" onclick="filterCategory('windev')">WinDev</button>
+	  <button class="btn btn-outline-primary" onclick="filterCategory('cms-ia')">CMS IA</button>
+	  <button class="btn btn-outline-primary" onclick="filterCategory('ia-projet')">IA Projet</button>
     </div>
   </div>
 
@@ -88,8 +92,8 @@
       <div class="card h-100">
         <img src="images/ecv.png" class="card-img-top" alt="Portfolio HTML CSS Bootstrap">
         <div class="card-body">
-          <h5>Portfolio HTML / CSS</h5>
-          <p>Portfolio Bootstrap responsive.</p>
+          <h5>💻 Portfolio Intformatique </h5>
+          <p>HTML / CSS & Bootstrap responsive.</p>
           <a href="https://metenier73.github.io/web/index.html" target="_blank" class="btn btn-modern">Voir</a>
         </div>
       </div>
@@ -99,7 +103,7 @@
       <div class="card h-100">
         <img src="images/SKI.PNG" class="card-img-top" alt="Portfolio Ski">
         <div class="card-body">
-          <h5>Portfolio Ski & Snowboard</h5>
+          <h5>🎿 Portfolio Ski & Snowboard</h5>
           <p>HTML, CSS, JS, jQuery & Bootstrap.</p>
           <a href="https://metenier73.github.io/PortfolioSki/" target="_blank" class="btn btn-modern">Voir</a>
         </div>
@@ -110,7 +114,7 @@
       <div class="card h-100">
         <img src="images/snapface.png" class="card-img-top" alt="Snapface Angular">
         <div class="card-body">
-          <h5>Snapface Angular</h5>
+          <h5>📸 Snapface </h5>
           <p>Site de dépôt d'images en Angular.</p>
           <a href="https://metenier73.github.io/snapface/" target="_blank" class="btn btn-modern">Voir</a>
         </div>
@@ -121,19 +125,36 @@
       <div class="card h-100">
         <img src="images/React-app.png" class="card-img-top" alt="Météo React">
         <div class="card-body">
-          <h5>Météo React</h5>
-          <p>Prévisions météorologiques dans le monde.</p>
+          <h5>🌞 Météo-App </h5>
+          <p>Prévisions météorologiques dans le monde : React.</p>
           <a href="https://metenier73.github.io/meteo-app/" target="_blank" class="btn btn-modern">Voir</a>
         </div>
       </div>
     </div>
+	
+	
+	<div class="col-md-4 project-card" data-category="frontend">
+      <div class="card h-100">
+        <img src="images/2025SkiSnowboard.jpg" class="card-img-top" alt="Monitrice Ski & SnowBoard">
+        <div class="card-body">
+          <h5>🎿 🏂 Site Monitrice Ski & SnowBoard </h5>
+          <p>Html, Css & React.</p>
+          <a href="https://metenier73.github.io/ski-snowboard-tignes-valdisere/" target="_blank" class="btn btn-modern">Voir</a>
+        </div>
+      </div>
+    </div>
+	
+	
+	
+	
+	
 
     <!-- FULL-STACK PROJECTS -->
     <div class="col-md-4 project-card" data-category="fullstack">
       <div class="card h-100">
         <img src="images/boutique.png" class="card-img-top" alt="Boutique Full-Stack">
         <div class="card-body">
-          <h5>BoutiquePerso</h5>
+          <h5>💻 BoutiquePerso : Wampserver & PhpMyadmin</h5>
           <p>HTML, JS, MySQL, PHP.</p>
           <a href="#" class="btn btn-modern">Projet Local</a>
         </div>
@@ -145,35 +166,145 @@
       <div class="card h-100">
         <img src="images/WIXINFO.PNG" class="card-img-top" alt="Portfolio CMS">
         <div class="card-body">
-          <h5>Portfolio CMS WIX</h5>
+          <h5>💻 Portfolio Informatique CMS </h5>
           <p>Créé avec WIX, sans programmation.</p>
           <a href="https://meteniermyriam.wixsite.com/portfolio" target="_blank" class="btn btn-modern">Voir</a>
         </div>
       </div>
     </div>
-
+	
+    <div class="col-md-4 project-card" data-category="cms">
+      <div class="card h-100">
+        <img src="images/SKIWIX.PNG" class="card-img-top" alt="Portfolio CMS">
+        <div class="card-body">
+          <h5>🎿 Portfolio Ski & SnowBoard CMS </h5>
+          <p>Créé avec WIX, sans programmation.</p>
+          <a href="https://meteniermyriam.wixsite.com/snowride73" target="_blank" class="btn btn-modern">Voir</a>
+        </div>
+      </div>
+    </div>
+	
+	 <div class="col-md-4 project-card" data-category="cms">
+      <div class="card h-100">
+        <img src="images/SKIWIX.PNG" class="card-img-top" alt="Portfolio CMS">
+        <div class="card-body">
+          <h5>☕ Veille Java CMS  </h5>
+          <p>Créé avec WIX, sans programmation.</p>
+          <a href="https://meteniermyriam.wixsite.com/veille" target="_blank" class="btn btn-modern">Voir</a>
+        </div>
+      </div>
+    </div>
+	
+	<div class="col-md-4 project-card" data-category="cms">
+      <div class="card h-100">
+        <img src="images/SKIWIX.PNG" class="card-img-top" alt="Portfolio CMS">
+        <div class="card-body">
+          <h5>🍕 Site pizzaïolo CMS  </h5>
+          <p>Créé avec WIX, sans programmation - multi-plateforme.</p>
+          <a href="https://meteniermyriam.wixsite.com/mapizza" target="_blank" class="btn btn-modern">Voir</a>
+        </div>
+      </div>
+    </div>
+	
+	
+	
+    <!-- CMS IA PROJECTS -->
+	<div class="col-md-4 project-card" data-category="cms-ia">
+      <div class="card h-100">
+        <img src="images/ski-booking.png" class="card-img-top" alt="Monitrice Ski & Snowboard">
+        <div class="card-body">
+          <h5>⛷️ 🤖 Site  monitrice de ski & snowboard   </h5>
+          <p>lovable.dev - IA.</p>
+          <a href="https://ski-booking-rendezvous.lovable.app/" target="_blank" class="btn btn-modern">Voir</a>
+        </div>
+      </div>
+    </div>
+	
+	<div class="col-md-4 project-card" data-category="cms-ia">
+      <div class="card h-100">
+        <img src="images/Monitrice.png" class="card-img-top" alt="Monitrice Ski & Snowboard">
+        <div class="card-body">
+          <h5>⛷️ 🤖 Site  monitrice de ski & snowboard   </h5>
+          <p>Soloist - IA.</p>
+          <a href="https://soloist.ai/monitricedeskisnowboard" target="_blank" class="btn btn-modern">Voir</a>
+        </div>
+      </div>
+    </div>
+	
+	
+    <!-- PYTHON PROJECTS -->
     <div class="col-md-4 project-card" data-category="python">
       <div class="card h-100">
         <img src="images/script.png" class="card-img-top" alt="Scripts Python">
         <div class="card-body">
-          <h5>Scripts Python</h5>
+          <h5>🐍 Scripts Python</h5>
           <p>Boîte à outils Windows.</p>
           <a href="https://github.com/metenier73/pythonScript.git" target="_blank" class="btn btn-modern">Voir</a>
         </div>
       </div>
     </div>
 
-    <!-- IA PROJECTS -->
+
+	<!-- WinDev PROJECTS -->
+    <div class="col-md-4 project-card" data-category="windev">
+      <div class="card h-100">
+        <img src="images/Windev.png" class="card-img-top" alt="Scripts Python">
+        <div class="card-body">
+          <h5>🗻 Application WinDev</h5>
+          <p>Application Tronc Commun Montagne pour Windows.</p>
+          <a href="https://drive.google.com/file/d/1sTcMM2z91UTYmvBOm-A3sDM_1PTtcktk/view?usp=drive_link" target="_blank" class="btn btn-modern">Voir</a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- WEB IA  -->
     <div class="col-md-4 project-card" data-category="ia">
       <div class="card h-100">
         <img src="images/IntelligenceArtificielle.png" class="card-img-top" alt="Cours IA">
         <div class="card-body">
-          <h5>Cours IA Complet</h5>
+          <h5>🎓 🤖 ✨ Cours IA Complet</h5>
           <p>HTML, CSS & JavaScript.</p>
           <a href="https://ajnvlngh.manus.space/" target="_blank" class="btn btn-modern">Voir</a>
         </div>
       </div>
     </div>
+	
+	
+	<div class="col-md-4 project-card" data-category="ia">
+      <div class="card h-100">
+        <img src="images/Psychologie.png" class="card-img-top" alt="Découvrez votre esprit">
+        <div class="card-body">
+          <h5>🧠🔍✨️ Site Psychology </h5>
+          <p>HTML, CSS & JavaScript.</p>
+          <a href="https://afbrkuwm.manus.space/ target="_blank" class="btn btn-modern">Voir</a>
+        </div>
+      </div>
+    </div>
+	
+	 <!-- IA PROJECTS -->
+    <div class="col-md-4 project-card" data-category="ia-projet">
+      <div class="card h-100">
+      
+        <div class="card-body">
+          <h5>🌍 Projet réchauffement climatique</h5>
+          <p>API GIEC avec Django REST Framework.</p>
+          <a href="https://github.com/metenier73/GIEC.git" target="_blank" class="btn btn-modern">Voir</a>
+        </div>
+      </div>
+    </div>
+	
+	
+	<div class="col-md-4 project-card" data-category="ia">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5>🎭 Détection d'Émotions Faciales </h5>
+          <p>Deep Learning.</p>
+          <a href="https://github.com/metenier73/D-tection-d-motions-faciales.git target="_blank" class="btn btn-modern">Voir</a>
+        </div>
+      </div>
+    </div>
+
 
     <!-- Ajouter d'autres projets ici… -->
 
